@@ -47,7 +47,7 @@ public class StreamExamples {
         // contains next 2 elements
         Map<StreamMessageId, Map<String, String>> map2 = stream.readGroup("testGroup", "consumer2");
 
-        PendingResult pi = stream.listPending("testGroup");
+//        PendingResult pi = stream.listPending("testGroup");
         
         redisson.shutdown();
     }
